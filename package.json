@@ -53,7 +53,9 @@
     "start": "node ./lib/wolfpackbot.js"
   },
   "dependencies": {
-    "tmi.js": "latest"
+    "tmi.js": "latest",
+    "pg-promise":"~4.4.0"
+
   },
   "license": "unlicense"
 }
