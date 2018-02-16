@@ -54,8 +54,7 @@
   },
   "dependencies": {
     "tmi.js": "latest",
-    "pg-promise":"~4.4.0"
-
+    "pg-promise": "~4.4.0"
   },
   "license": "unlicense"
 }
