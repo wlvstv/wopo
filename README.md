@@ -1,6 +1,6 @@
 # Wopo
 
-A chatbot for the wolvesatmydoor Twitrch.tv channel. 
+A chatbot for the wolvesatmydoor Twitch.tv channel. 
 
 ## Getting Started
 
@@ -26,7 +26,7 @@ Navigate to project folder and install packages
 <C:\...\wopo> npm install
 ```
 
-open lib\devConfig.js and insert test crededntial
+open lib\devConfig.js and insert test credentials
 
 ```
 const un = ''; // Your twitch username
@@ -39,10 +39,10 @@ start the application
 <C:\...\wopo> npm start
 ```
 
-Note, a succesful connection will log the address and port of the connection in the console. N
-avigate to the testing channel and test away!  Make GLaDOS proud! 
+Note, a succesful connection will log the address and port of the connection in the console. 
+Navigate to the testing channel and test away!  Make GLaDOS proud! 
 
-## Running the tests
+## Running the Tests
 
 (someone who knows about testing will fill this in soon...)
 
