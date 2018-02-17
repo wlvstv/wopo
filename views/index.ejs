@@ -1,0 +1,10 @@
+<% include ./partials/header %>
+
+<h1>Welcome to the Wopo Chat Bot!</h1>
+<ul class="list-group">
+    <% commands.forEach(function(command) { %>
+        <li class="list-group-item"><%= command.command %></li>
+    <% }) %>
+</ul>
+
+<% include ./partials/footer %>
