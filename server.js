@@ -19,15 +19,22 @@ var connection = {
 }
 var db = pgp(connection);
 
+
 // Routes
+// root route
 app.get("/", function(req, res) {
+    
+});
+
+// commands show route
+app.get("/commands", function(req, res) {
     db
         .any('SELECT * FROM public.commands')
         .then(data => {
             res.render("index", {commands: data});
         })
         .catch(error => {
-
+            console.log(error);
         });    
 });
 

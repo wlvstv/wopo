@@ -1,10 +1,25 @@
 <% include ./partials/header %>
 
 <h1>Welcome to the Wopo Chat Bot!</h1>
-<ul class="list-group">
-    <% commands.forEach(function(command) { %>
-        <li class="list-group-item"><%= command.command %></li>
-    <% }) %>
-</ul>
+<div class="row">
+    <div class="col-md-6">
+        <ul class="list-group">
+            <% commands.forEach(function(command) { %>
+                <li class="list-group-item list-group-item-action">
+                    <%= command.command %>
+                    <!-- <span class="float-right">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#commandModal">Edit</button>
+                    </span> -->
+                </li>
+            <% }) %>
+        </ul>
+    </div>
+    <div class="col-md-6">
+        
+    </div>
+</div>
+
+
+<% include ./partials/commandModal %>
 
 <% include ./partials/footer %>
