@@ -38,6 +38,7 @@
     "gulp-nsp": "^2.1.0",
     "gulp-plumber": "^1.0.0",
     "isparta": "^4.0.0",
+    "nodemon": "^1.15.0",
     "prettier": "latest"
   },
   "eslintConfig": {
