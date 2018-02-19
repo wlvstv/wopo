@@ -3,7 +3,11 @@
 <h1>Welcome to the Wopo Chat Bot!</h1>
 <div class="row">
     <div class="col-md-6">
-        <ul class="list-group">
+        <div class="form-group">
+            <label for="listFilter">Filter List:</label>
+            <input type="text" id="listFilter" class="listFilter form-control" placeholder="Search">
+        </div>
+        <ul class="commandList list-group">
             <% commands.forEach(function(command) { %>
                 <li class="command list-group-item list-group-item-action">
                     <%= command.command %>
