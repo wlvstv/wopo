@@ -8,12 +8,12 @@ $(document).ready(function() {
     }
 
     getUrl =
-      "wopo/api/commands/" +
+      "wopo/api/commands/update/" +
       $(this)
         .text()
         .trim();
 
-    console.log(getUrl);
+    // console.log(getUrl);
 
     $.ajax({
       type: "GET",

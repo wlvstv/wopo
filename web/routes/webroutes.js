@@ -6,7 +6,7 @@ var router = express.Router();
 db = pgp(connection);
 
 // Webpage routes
-router.get("/commands", function(req, res) {
+router.get("/wopo", function(req, res) {
   db
     .any("SELECT * FROM public.commands")
     .then(commands => {

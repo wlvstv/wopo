@@ -1,39 +1,45 @@
 <% include ./partials/header %>
 
-    <h1>Welcome to the Wopo Chat Bot!</h1>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="form-group">
-                <label for="listFilter">Filter List:</label>
-                <input type="text" id="listFilter" class="listFilter form-control" placeholder="Search">
-            </div>
-            <ul class="commandList list-group">
-                <% commands.forEach(function(command) { %>
-                    <li class="command list-group-item list-group-item-action">
-                        <%= command.command %>
-                    </li>
-                    <% }) %>
-            </ul>
-        </div>
-        <div class="col-md-6">
-            <div class="container">
-                <form action="" method="">
-                    <div class="form-group">
-                        <label for="command">Command</label>
-                        <input type="text" class="form-control" id="command" name="command" placeholder="!Command">
-                    </div>
-                    <div class="form-group">
-                        <label for="response">Response</label>
-                        <textarea class="form-control" rows="3" id="response" name="response"></textarea>
-                    </div>
-                    <div class="form-group float-right">
-                        <button class="btn btn-success">Update</button>
-                        <button class="btn btn-danger">Delete</button>
-                    </div>
-                </form>
-            </div>
-        </div>
+  <h1>Welcome to the Wopo Chat Bot!</h1>
+  <div class="row mainRow">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="listFilter">Filter List:</label>
+        <input type="text" id="listFilter" class="listFilter form-control" placeholder="Search">
+      </div>
+      <ul class="commandList list-group">
+        <% commands.forEach(function(command) { %>
+          <li class="command list-group-item list-group-item-action">
+            <%= command.command %>
+          </li>
+          <% }) %>
+      </ul>
     </div>
+    <div class="col-md-6">
+      <div class="container">
+        <form>
+          <div class="form-group">
+            <label for="#commandInput">Command: </label>
+            <div class="input-group" id="commandInput">
+              <div class="input-group-text">
+                <input type="checkbox" id="isMod">
+              </div>
+              <input type="text" class="form-control" id="command">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="#response">Response</label>
+            <textarea class="form-control" rows="3" id="response" name="response"></textarea>
+          </div>
+          <div class="form-group float-right">
+            <button type="button" class="btn btn-info" id="btnNew" data-toggle="modal" , data-target="#newCommandModal">Add New</button>
+            <button type="button" class="btn btn-success" id="btnUpdate">Update</button>
+            <button type="button" class="btn btn-danger" id="btnDelete">Delete</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 
-
-        <% include ./partials/footer %>
+  <% include ./partials/newCommandModal %>
+    <% include ./partials/footer %>
