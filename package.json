@@ -1,8 +1,8 @@
 {
-  "name": "WolfpackBot",
+  "name": "wolfpackbot",
   "version": "0.0.1",
   "description": "Wolvesatmydoor Twitch Chat Bot",
-  "homepage": "wlvs.tv",
+  "homepage": "http://wlvs.tv",
   "author": {
     "name": "Decoy",
     "email": "mike@wlvs.tv",
@@ -38,6 +38,7 @@
     "gulp-nsp": "^2.1.0",
     "gulp-plumber": "^1.0.0",
     "isparta": "^4.0.0",
+    "nodemon": "^1.17.2",
     "prettier": "latest"
   },
   "eslintConfig": {
@@ -50,11 +51,14 @@
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp",
-    "start": "node ./lib/wolfpackbot.js"
+    "start": "nodemon ./lib/wolfpackbot.js"
   },
   "dependencies": {
-    "tmi.js": "latest",
-    "pg-promise": "~4.4.0"
+    "es6-promise": "^4.2.4",
+    "fetch": "^1.1.0",
+    "isomorphic-fetch": "^2.2.1",
+    "pg-promise": "~4.4.0",
+    "tmi.js": "latest"
   },
   "license": "unlicense"
 }
