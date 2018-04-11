@@ -73,9 +73,9 @@ router.route("/delete/:command").delete((req, res) => {
   var command = req.params.command;
   console.log(`Command to be deleted: ${command}`);
   db
-    .one("DELETE FROM public.commands WHERE command = $1", command)
-    .then(() => {
-      res.redirect("/wopo");
+    .any("DELETE FROM public.commands WHERE command = $1", command)
+    .then((data) => {
+      res.json(data);
     })
     .catch(error => {
       console.log(`There was an err: ${error}`);

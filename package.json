@@ -51,10 +51,11 @@
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp",
-    "start": "node ./lib/wolfpackbot.js"
+    "start": "concurrently \"nodemon ./web/server.js\" \"nodemon ./lib/wolfpackbot\""
   },
   "dependencies": {
     "body-parser": "^1.18.2",
+    "concurrently": "^3.5.1",
     "ejs": "^2.5.7",
     "express": "^4.16.2",
     "pg-promise": "~4.4.0",
