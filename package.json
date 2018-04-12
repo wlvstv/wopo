@@ -51,7 +51,7 @@
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp",
-    "start": "concurrently \"nodemon ./web/server.js\" \"nodemon ./lib/wolfpackbot\""
+    "start": "node ./web/server.js"
   },
   "dependencies": {
     "body-parser": "^1.18.2",
