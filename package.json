@@ -39,7 +39,8 @@
     "gulp-plumber": "^1.0.0",
     "isparta": "^4.0.0",
     "nodemon": "^1.17.2",
-    "prettier": "latest"
+    "prettier": "latest",
+    "moment" : "latest"
   },
   "eslintConfig": {
     "extends": "xo-space",
