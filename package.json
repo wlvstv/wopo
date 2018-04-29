@@ -40,7 +40,7 @@
     "isparta": "^4.0.0",
     "nodemon": "^1.17.2",
     "prettier": "latest",
-    "moment" : "latest"
+    "moment": "latest"
   },
   "eslintConfig": {
     "extends": "xo-space",
