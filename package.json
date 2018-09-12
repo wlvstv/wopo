@@ -38,9 +38,9 @@
     "gulp-nsp": "^2.1.0",
     "gulp-plumber": "^1.0.0",
     "isparta": "^4.0.0",
+    "moment": "^2.22.2",
     "nodemon": "^1.17.2",
-    "prettier": "latest",
-    "moment": "latest"
+    "prettier": "latest"
   },
   "eslintConfig": {
     "extends": "xo-space",
@@ -58,6 +58,7 @@
     "es6-promise": "^4.2.4",
     "fetch": "^1.1.0",
     "isomorphic-fetch": "^2.2.1",
+    "node-cron": "^2.0.1",
     "pg-promise": "~4.4.0",
     "tmi.js": "latest"
   },
