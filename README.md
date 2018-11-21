@@ -28,10 +28,18 @@ Navigate to project folder and install packages
 
 open lib\devConfig.js and insert test credentials
 
+you will want to use an alternate Twitch account
+
+if you don't have one you should create a new one
+
 ```
 const un = ''; // Your twitch username
 const pw = ''; // Your oAuth Token
 ```
+
+to get your oAuth Token
+
+http://www.twitchapps.com/tmi/
 
 start the application
 
