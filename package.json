@@ -28,7 +28,7 @@
     "eslint-config-prettier": "^2.10.0",
     "eslint-plugin-babel": "^3.3.0",
     "eslint-plugin-prettier": "latest",
-    "gulp": "^3.9.0",
+    "gulp": "^4.0.2",
     "gulp-babel": "^6.1.2",
     "gulp-eslint": "^3.0.1",
     "gulp-exclude-gitignore": "^1.0.0",
